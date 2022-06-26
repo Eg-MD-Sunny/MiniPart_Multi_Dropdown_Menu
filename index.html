@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if IE]> <![endif]-->
+<!--[if lt IE 6]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This is awesome description" />
+    <title>Multi Drop-Down Menu</title>
+
+    <!-- Fonts files -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome file -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Animate css file -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- Bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Theme files -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script type="text/javascript">
+      function disableselect(e) {
+        return false;
+      }
+      function reEnable() {
+        return true;
+      }
+      //if IE4+
+      document.onselectstart = new Function("return false");
+      document.oncontextmenu = new Function("return false");
+      //if NS6
+      if (window.sidebar) {
+        document.onmousedown = disableselect;
+        document.onclick = reEnable;
+      }
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--Header Area Start-->
+    <section>
+      <div class="header_area" id="0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header_inner">
+                <div class="header_pomo">
+                  <h1>Awesome Drop-Down Menu</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="header_inner">
+                <div class="link_pomo">
+                  <nav>
+                    <ul class="link_menu">
+                      <li><a href="#1">One</a></li>
+                      <li><a href="#2">Two</a></li>
+                      <li><a href="#3">Three</a></li>
+                      <li><a href="#4">Four</a></li>
+                      <li><a href="#5">Five</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Header Area End-->
+
+    <!--Menu Area_First Start-->
+    <section class="area_border">
+      <div class="menu_area" id="1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu_pomo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="menu_text" id="option1">
+                      <h1>Style Name: <span>fadeInDown</span></h1>
+                    </div>
+                  </div>
+                  <!--First Style-->
+                  <div class="col-md-12">
+                    <div class="menu_text">
+                      <nav>
+                        <ul class="mainmenu">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="parents">
+                            <a href="#">Submenu</a>
+                            <ul class="child">
+                              <li><a href="#">Cisco</a></li>
+                              <li><a href="#">Asha3035</a></li>
+                              <li><a href="#">Firewall</a></li>
+                              <li><a href="#">Electric Dom</a></li>
+                              <li><a href="#">Projector</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Area_First End-->
+
+    <!--Menu Area_Second Start-->
+    <section class="area_border">
+      <div class="menu_area" id="2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu_pomo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="menu_text" id="option2">
+                      <h1>Style Name: <span>flipInX</span></h1>
+                    </div>
+                  </div>
+                  <!--Second Style-->
+                  <div class="col-md-12">
+                    <div class="menu_text">
+                      <nav>
+                        <ul class="mainmenu" id="one">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="parents">
+                            <a href="#">Submenu</a>
+                            <ul class="child">
+                              <li><a href="#">Cisco</a></li>
+                              <li><a href="#">Asha3035</a></li>
+                              <li><a href="#">Firewall</a></li>
+                              <li><a href="#">Electric Dom</a></li>
+                              <li><a href="#">Projector</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Area_First End-->
+
+    <!--Menu Area_Third Start-->
+    <section class="area_border">
+      <div class="menu_area" id="3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu_pomo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="menu_text" id="option3">
+                      <h1>Style Name: <span>flipInY</span></h1>
+                    </div>
+                  </div>
+                  <!--Third Style-->
+                  <div class="col-md-12">
+                    <div class="menu_text">
+                      <nav>
+                        <ul class="mainmenu" id="two">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="parents">
+                            <a href="#">Submenu</a>
+                            <ul class="child">
+                              <li><a href="#">Cisco</a></li>
+                              <li><a href="#">Asha3035</a></li>
+                              <li><a href="#">Firewall</a></li>
+                              <li><a href="#">Electric Dom</a></li>
+                              <li><a href="#">Projector</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Area_First End-->
+
+    <!--Menu Area_Forth Start-->
+    <section class="area_border">
+      <div class="menu_area" id="4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu_pomo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="menu_text" id="option4">
+                      <h1>Style Name: <span>bounceIn</span></h1>
+                    </div>
+                  </div>
+                  <!--Forth Style-->
+                  <div class="col-md-12">
+                    <div class="menu_text">
+                      <nav>
+                        <ul class="mainmenu" id="three">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="parents">
+                            <a href="#">Submenu</a>
+                            <ul class="child">
+                              <li><a href="#">Cisco</a></li>
+                              <li><a href="#">Asha3035</a></li>
+                              <li><a href="#">Firewall</a></li>
+                              <li><a href="#">Electric Dom</a></li>
+                              <li><a href="#">Projector</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Area_First End-->
+
+    <!--Menu Area_Firth Start-->
+    <section class="area_border">
+      <div class="menu_area" id="5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu_pomo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="menu_text" id="option5">
+                      <h1>Style Name: <span>fadeIn</span></h1>
+                    </div>
+                  </div>
+                  <!--Firth Style-->
+                  <div class="col-md-12">
+                    <div class="menu_text">
+                      <nav>
+                        <ul class="mainmenu" id="four">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">About</a></li>
+                          <li class="parents">
+                            <a href="#">Submenu</a>
+                            <ul class="child">
+                              <li><a href="#">Cisco</a></li>
+                              <li><a href="#">Asha3035</a></li>
+                              <li><a href="#">Firewall</a></li>
+                              <li><a href="#">Electric Dom</a></li>
+                              <li><a href="#">Projector</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Area_First End-->
+
+    <!--Footer Area Start-->
+    <section>
+      <div class="footer_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer_inner">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="social_area">
+                      <ul>
+                        <li>
+                          <a href="#" class="facebook"
+                            ><i class="fa fa-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" class="twitter"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" class="google_plus"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" class="dribbble"
+                            ><i class="fa fa-dribbble"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" class="behance"
+                            ><i class="fa fa-behance"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" class="pinterest"
+                            ><i class="fa fa-pinterest"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="copyright_area">
+                      <p>&copy; Naimur Zaman Sunny</p>
+                      <a href="#0"><i class="fa fa-angle-up"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer Area End-->
+
+    <!-- jQuery files -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- Bootstrap script file -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Opacity & Other IE fix for older browser -->
+    <!--[if lte IE 8]>
+      <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+    <![endif]-->
+
+    <!-- Theme script files -->
+    <script src="js/custom.js"></script>
+
+    <script>
+      $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                2000
+              );
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
